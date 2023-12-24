@@ -24,12 +24,21 @@ class Dog extends Animal {
 }
 
 class Cat extends Animal {
-	constructor(species) {
+	  constructor(species, color) {
     super(species);
-	}
+    this._color = color;
+  }
 
-  bark() {
-    this.makeSound('woof');
+  get color() {
+    return this._color;
+  }
+
+  purr() {
+    this.makeSound('purr');
+  }
+
+  meow() {
+    this.makeSound('meow');
   }
 }
 
