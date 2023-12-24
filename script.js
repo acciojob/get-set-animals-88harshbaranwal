@@ -18,8 +18,8 @@ class Dog extends Animal {
     super(species);
 }
 	
-  purr() {
-    this.makeSound('purr');
+  bark() {
+    this.makeSound('woof');
   }
 }
 
